@@ -31,3 +31,11 @@
     transform: rotate(360deg);
   }
 }
+
+.doggo-img {
+  max-width: 60px;
+}
+
+.doggo-container {
+  max-width: 100%;
+}
