@@ -8,7 +8,7 @@ class App extends React.Component {
     dogList: [],
     dogToBeRendered: "",
     filterTerm: ""
-  }
+  };
 
   componentDidMount(){
     fetch("http://localhost:3000/pups")
@@ -18,19 +18,19 @@ class App extends React.Component {
         dogList: dogs
       })
     })
-  }
+  };
 
   dogToRender = (dogNameFromChild) => {
     this.setState({
       dogToBeRendered: dogNameFromChild
     })
-  }
+  };
 
   handleFilter = (event) => {
     this.setState((prevState) => ({
       filterTerm: !prevState.filterTerm
     }))
-  }
+  };
 
   render(){ 
     let {dogList, dogToBeRendered} = this.state
@@ -63,6 +63,6 @@ class App extends React.Component {
       </div>
     );
   }
-}
+};
 
 export default App;
